@@ -112,6 +112,11 @@ interface InputProps extends StandardProps, FormItemProps {
   /**
    * 当键盘输入时，触发input事件，event.detail = {value, cursor}，处理函数可以直接 return 一个字符串，将替换输入框的内容。
    */
+  onChange?: BaseEventFunction,
+
+  /**
+   * 当键盘输入时，触发input事件，event.detail = {value, cursor}，处理函数可以直接 return 一个字符串，将替换输入框的内容。
+   */
   onInput?: BaseEventFunction,
 
   /**
